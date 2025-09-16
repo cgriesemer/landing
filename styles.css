@@ -357,16 +357,26 @@ section {
 }
 
 .solutions .container {
+    display: block;
+}
+
+.solutions-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.solutions-layout {
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 3rem;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 2.5rem;
     align-items: start;
 }
 
 .steps {
     list-style: none;
     padding: 0;
-    margin: 2rem 0 2.5rem;
+    margin: 0 0 2.5rem;
     display: grid;
     gap: 1.25rem;
 }
@@ -403,6 +413,7 @@ section {
 }
 
 .solutions .solutions-card {
+    align-self: start;
     background: rgba(79, 124, 255, 0.1);
     border-radius: var(--radius);
     border: 1px solid var(--color-border);
@@ -643,7 +654,7 @@ section {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .solutions .container,
+    .solutions-layout,
     .security .container,
     .contact .container {
         grid-template-columns: 1fr;
@@ -713,12 +724,4 @@ section {
         text-align: center;
     }
 }
-
-
-
-
-
-
-
-
 
