@@ -193,7 +193,8 @@
                     <p>Drop your email and we will reach out with a short demo and setup best practices.</p>
                     <p class="contact-footnote">We reply within one business day.</p>
                 </div>
-                <form class="contact-form" action="#" method="post">
+                <form class="contact-form" action="/" method="post" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />
                     <label for="email" class="sr-only">Work email</label>
                     <input type="email" id="email" name="email" placeholder="name@university.edu" required />
                     <button type="submit">Request demo</button>
